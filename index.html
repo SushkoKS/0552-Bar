@@ -5,11 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>0552 - Bar</title>
 		<link rel="icon" href="/0552-Bar/assets/favicon-V0-ig0mV.ico" />
-		<script type="module" crossorigin src="/0552-Bar/assets/index-DkjJayyA.js"></script>
-		<link rel="stylesheet" crossorigin href="/0552-Bar/assets/index-VKvZvS-h.css">
+		<script type="module" crossorigin src="/0552-Bar/assets/index-q-HKI5j5.js"></script>
+		<link rel="stylesheet" crossorigin href="/0552-Bar/assets/index-CIZkYqAU.css">
 	</head>
 	<body>
-		<section class="first-screen">
+		<section id="first-screen" class="first-screen">
 			<img src="/0552-Bar/assets/bar-TqYNDbjp.png" class="first-screen-img" alt="first-screen-img" />
 			<header class="header">
 				<div class="container header-container">
@@ -20,7 +20,7 @@
 							</a>
 						</div>
 						<button
-							class="navbar-toggler"
+							class="navbar-toggler collapsed"
 							type="button"
 							data-bs-toggle="collapse"
 							data-bs-target="#navbarNav"
@@ -40,7 +40,10 @@
 							</ul>
 						</div>
 					</nav>
-					<span class="header-phone">📞 000 XXX 00 XX</span>
+					<span class="header-phone">
+						<i class="fa-solid fa-phone"></i>
+						000 XXX 00 XX
+					</span>
 				</div>
 			</header>
 			<div class="hero">
@@ -382,14 +385,29 @@
 					<div class="row mb-1 mb-lg-4 d-flex align-items-center">
 						<div class="col-12 col-lg-6">
 							<div class="contacts-text">
-								<p class="contacts-subtitle">🌍 Country:</p>
+								<p class="contacts-subtitle">
+									<i class="fa-solid fa-earth-europe"></i>
+									Country:
+								</p>
 								<p>- Ukraine</p>
-								<p class="contacts-subtitle">📍 Location:</p>
+
+								<p class="contacts-subtitle">
+									<i class="fa-solid fa-location-dot"></i>
+									Location:
+								</p>
 								<p>- Kherson, Central park</p>
-								<p class="contacts-subtitle">🧭 Coordinates:</p>
+
+								<p class="contacts-subtitle">
+									<i class="fa-solid fa-compass"></i>
+									Coordinates:
+								</p>
 								<p>- 46°38′6″ N • 32°37′12″ E</p>
-								<p class="contacts-subtitle">📞 Phone number:</p>
-								<p>- 000 XXX 00 XX</p>
+
+								<p class="contacts-subtitle">
+									<i class="fa-solid fa-phone"></i>
+									Phone number:
+								</p>
+								<p>- <a href="tel:+38000XXX00XX">000 XXX 00 XX</a></p>
 							</div>
 						</div>
 						<div class="col-12 col-lg-6">
@@ -397,7 +415,7 @@
 								<img class="contacts-map-img" src="/0552-Bar/assets/map-uQt7kfQj.png" alt="contacts-map-img" />
 								<iframe
 									class="contacts-map-iframe"
-									src="https://www.google.com/maps?q=46.635,32.62&z=15&output=embed"
+									src="https://www.google.com/maps?q=46.635,32.62&z=15&hl=en&output=embed"
 									width="100%"
 									height="100%"
 									style="border: 0"
@@ -414,8 +432,30 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<div class="row">
-					<div class="col">© 0552 Bar 2024. All rights reserved.</div>
+				<div class="row align-items-center footer-first-row">
+					<div class="col-12 col-lg-6 footer-socials">
+						<div class="footer-socials-line"></div>
+						<a
+							href="https://www.facebook.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Facebook"
+						>
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a
+							href="https://www.instagram.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Instagram"
+						>
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+						<div class="footer-socials-line"></div>
+					</div>
+					<div class="col-12 col-lg-6 footer-copy">
+						© 0552 Bar <span id="currentYear"></span>. All rights reserved.
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -445,7 +485,7 @@
 						style="z-index: 10"
 					></button>
 
-					<div class="modal-body">
+					<div class="modal-body booking-modal-body">
 						<h5 class="mb-4 text-center">Заказать обратный звонок</h5>
 
 						<form>
@@ -476,6 +516,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>
+		<a href="#first-screen" class="back-to-top">
+			<i class="fa-solid fa-arrow-up"></i>
+		</a>
 	</body>
 </html>
